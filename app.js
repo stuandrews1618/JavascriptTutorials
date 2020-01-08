@@ -143,6 +143,55 @@ console.log(typeof today);
 
 
 
+//TYPE CONVERSIONS
+
+//Number to String
+
+let val;
+val = 5;
+console.log(val);
+console.log(typeof val);
+console.log(val.length);
+
+let val2;
+val2 = String(val);
+console.log(val2);
+console.log(typeof val2);
+console.log(val2.length);
+
+let val3;
+val3 = String(4+4);
+console.log(val3);
+console.log(typeof val3);
+console.log(val3.length);
+
+//Boolean to String
+
+let val4;
+val4 = String(true);
+console.log(val4);
+console.log(typeof val4);
+console.log(val4.length);
+
+//Date to String
+
+let val5;
+val5 = String(new Date());
+console.log(val5);
+console.log(typeof val5);
+console.log(val5.length);
+
+//Array to String
+
+let val6;
+val6 = String([1,2,3,4,5,6,7,8,9]);
+console.log(val6);
+console.log(typeof val6);
+console.log(val6.length);
+
+
+
+
 
 
 
