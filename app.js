@@ -191,14 +191,88 @@ console.log(val6.length);
 
 
 
+//toString() method
+
+let val7;
+val7 = (5).toString();
+console.log(val7);
+console.log(typeof val7);
+console.log(val7.length);
+
+let val8;
+val8 = (true).toString();
+console.log(val8);
+console.log(typeof val8);
+console.log(val8.length);
 
 
+// String to Number method 1
+
+let val9, val10;
+val9 = '5';
+val10 = Number(val9);
+console.log(val9);
+console.log(typeof val9);
+console.log(val9.length);
+console.log(val10);
+console.log(typeof val10);
+console.log(val10.toFixed(2)); // 2 represents demical points
 
 
+// String to Number method 2 parsing Integer
+
+let val13, val14;
+val13 = '5';
+val14 = parseInt(val13);
+console.log(val13);
+console.log(typeof val13);
+console.log(val13.length);
+console.log(val14);
+console.log(typeof val14);
+console.log(val14.toFixed(2)); // 2 represents demical points
 
 
+// String to Number method 3 parsing float
+
+let val15, val16;
+val15 = '5.335';
+val16 = parseFloat(val15);
+console.log(val15);
+console.log(typeof val15);
+console.log(val15.length);
+console.log(val16);
+console.log(typeof val16);
+console.log(val16.toFixed(3)); // 3 represents demical points
+
+// Boolean to Number
+
+let val11,val12;
+val11 = true;
+val12 = Number(val11);
+console.log(val11);
+console.log(typeof val11);
+console.log(val11.length);
+console.log(val12);
+console.log(typeof val12);
+console.log(val12.toFixed(2)); // 2 represents demical points
+
+// type coersion
 
 
+ // string
+const val17 = String(5);
+const val18 = 6;
+const sum = val17 + val18;
+console.log(sum);
+console.log(typeof sum);
+
+
+//number
+const val19 = String(5);
+const val20 = 6;
+const sum2 = Number(val19 + val20);
+console.log(sum2);
+console.log(typeof sum2);
 
 
 
