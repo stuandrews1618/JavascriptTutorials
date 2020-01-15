@@ -274,6 +274,36 @@ const sum2 = Number(val19 + val20);
 console.log(sum2);
 console.log(typeof sum2);
 
+// ****   NUMBERS    ******
 
+const num1 = 100;
+const num2 = 50;
+let tot;
+let arr;
+// Simple maths
+
+arr = [1,2,3,-3,600,1.2225];
+tot = num1 + num2;
+tot = num1 - num2;
+tot = num1 * num2;
+tot = num1 / num2;
+tot = num1 % num2 ; // modulus - remainder 
+
+// Math Object
+
+tot = Math.PI;  // PI
+tot = Math.E; // Eulers Number
+tot = Math.round(2.4);  // rounds to nearest int
+tot = Math.ceil(2.8);  // rounds to next int
+tot = Math.floor(2.4); // rounds to previous int
+tot = Math.sqrt(64); //Root
+tot = Math.abs(-600); // returns postive version
+tot = Math.pow(8, 2); //returns power
+tot = Math.min(arr); //returns min of a array of numbers
+tot = Math.max(arr); //returns max of a array of numbers
+tot = Math.random(); // returns random number between 0 and 1
+tot = Math.ceil(Math.random() * 20); // random number between 1 and 20
+
+console.log(tot);
 
 
