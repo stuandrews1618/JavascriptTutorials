@@ -279,10 +279,10 @@ console.log(typeof sum2);
 const num1 = 100;
 const num2 = 50;
 let tot;
-let arr;
+let arr2;
 // Simple maths
 
-arr = [1,2,3,-3,600,1.2225];
+arr2 = [1,2,3,-3,600,1.2225];
 tot = num1 + num2;
 tot = num1 - num2;
 tot = num1 * num2;
@@ -299,11 +299,148 @@ tot = Math.floor(2.4); // rounds to previous int
 tot = Math.sqrt(64); //Root
 tot = Math.abs(-600); // returns postive version
 tot = Math.pow(8, 2); //returns power
-tot = Math.min(arr); //returns min of a array of numbers
-tot = Math.max(arr); //returns max of a array of numbers
+tot = Math.min(arr2); //returns min of a array of numbers
+tot = Math.max(arr2); //returns max of a array of numbers
 tot = Math.random(); // returns random number between 0 and 1
 tot = Math.ceil(Math.random() * 20); // random number between 1 and 20
 
 console.log(tot);
+
+//strings and concat
+
+const firstName2 ='William';
+const lastName2 = 'Johnson';
+
+let val21;
+val21 = firstName2 + lastName2
+console.log(val21);
+
+let val22;
+val22 = firstName2 + ' ' + lastName2;
+console.log(val22);
+
+//Apend
+
+let val23;
+
+val23 = 'Stuart ';
+val23 += 'Andrews';
+console.log(val23);
+
+let val24;
+const age = 39;
+val24 = 'Hello, my name is ' + val23 + ' and I am ' + age; 
+console.log(val24);
+
+//Escaping
+let val25;
+val25 = 'That\'s awesome, I can\'t wait'; 
+console.log(val25);
+
+//Length
+let val26;
+val26 = firstName2.length;
+console.log(val26);
+
+//concat
+let val27;
+val27 = firstName2.concat(' ',lastName2);
+console.log(val27);
+
+//Change case
+let val28;
+val28 = firstName2.toUpperCase().concat(' ',lastName2.toUpperCase());
+console.log(val28);
+
+//array of the string
+let val29;
+val29 = firstName2[0,3];
+console.log(val29);
+
+//indexOf()
+let val30;
+val30 = firstName2.indexOf('i');
+console.log(val30);
+
+//lastIndexOf()
+let val31;
+val31 = firstName2.lastIndexOf('l');
+console.log(val31);
+
+//charAt()
+let val32;
+val32 = firstName2.charAt('2');
+console.log(val32);
+
+//get last Char
+let val33;
+val33 = firstName2.charAt(firstName2.length - 1);
+console.log(val33);
+
+//get subString
+let val34;
+val34 = firstName2.substring(0,4);
+console.log(val34);
+
+//slice()
+let val35;
+val35 = firstName2.slice(-4);
+console.log(val35);
+
+//split()
+const str = 'Hello my name is Stuart';
+let val36;
+val36 = str.split(' ');
+console.log(val36);
+
+//replace())
+let val37;
+val37 = str.replace('Stuart', 'Barry');
+console.log(val37);
+
+//includes()
+let val38;
+val38 = str.includes('Stuart');
+console.log(val38);
+
+//TEMPLATE LITERALS
+
+const myName = 'Stuart';
+//const myAge = 39; //repleat from above
+const job = 'Estimator';
+const city = 'Weston';
+let html;
+
+//With out template strings (es5)
+html =  '<ul><li>Name: ' + myName + '</li><li>Age: ' + myAge + '</li><li>Job: ' + job + '</li><li>City: ' + city + '</li></ul>';
+
+html =  '<ul>' +
+        '<li>Name: ' + myName + '</li>' +
+        '<li>Age: ' + myAge + '</li>' +
+        '<li>Job: ' + job + '</li>' +
+        '<li>City: ' + city + '</li>' +
+        '</ul>';
+
+// with template literals (es6) - uses backticks to left of 1  = ` `  and ${.....} template
+
+function Hiya(){
+    return 'Good Day Sir';
+};
+
+html = `
+    <ul>
+        <li>Name: ${myName}</li>
+        <li>Age: ${myAge}</li>
+        <li>Job: ${job}</li>
+        <li>City: ${city}</li>
+        <li>Fave Number : ${Math.E * Math.PI}</li>
+        <li>Function: ${Hiya()}</li>
+        <li>Ternary Operator: ${age > 30 ? 'Over 30, Boohoo!' : 'Under 30'}</li>
+    </ul>
+`;
+
+document.body.innerHTML = html;
+
+
 
 
