@@ -319,7 +319,7 @@ let val22;
 val22 = firstName2 + ' ' + lastName2;
 console.log(val22);
 
-//Apend
+//Append
 
 let val23;
 
@@ -441,6 +441,102 @@ html = `
 
 document.body.innerHTML = html;
 
+//ARRAYS
+
+//array of numbers
+
+const numbersArr = [43,56,33,23,44,36,5];
+const numbers2Arr = new Array(22,45,33,76,54);
+const fruitArr = ['Apple','Banana','Orange','Pear'];
+const mixedArr = [22,'Hello', true, undefined, null, {a:1,b:1}, new Date()];
+
+console.log(mixedArr);
 
 
+//array examples
 
+//Get length
+let valArr;
+valArr = numbersArr.length;
+console.log(numbersArr);
+console.log(valArr);
+
+//Check to see if an array
+let valArr2;
+valArr2 = Array.isArray(numbersArr);
+console.log(numbersArr);
+console.log(valArr2);
+
+//get single value from array
+let valArr3;
+valArr3 = numbersArr[3];
+console.log(numbersArr);
+console.log(valArr3);
+
+//insert into array
+numbersArr[2] = 100;
+console.log(numbersArr);
+
+//find index of a value in array
+let valArr4;
+valArr4 = numbersArr.indexOf(36);
+console.log(numbersArr);
+console.log(valArr4);
+
+//mutating arrays
+
+//adding onto the end
+numbersArr.push(250);
+console.log(numbersArr);
+
+//inserting at the front;
+numbersArr.unshift(120);
+console.log(numbersArr);
+
+//remove last item in array
+numbersArr.pop();
+console.log(numbersArr);
+
+//remove first item
+numbersArr.shift();
+console.log(numbersArr);
+
+//splice values - args are start and end
+numbersArr.splice(1,3);
+console.log(numbersArr);
+
+//reversing
+numbersArr.reverse();
+console.log(numbersArr);
+
+//Concatenate Array
+let valArr5;
+valArr5 = numbersArr.concat(numbers2Arr);
+console.log(numbersArr);
+console.log(valArr5);
+
+//Sorting
+fruitArr.sort();
+console.log(fruitArr);
+valArr5.sort();
+console.log(valArr5); //doesn't sort by number, but by alphabet first character
+//using the compare function : https://www.w3schools.com/js/js_array_sort.asp
+//sort accending numbers
+valArr5.sort(function (x,y) {
+    return x-y;
+});
+console.log(valArr5);
+//sort decending numbers
+valArr5.sort(function (x,y) {
+    return y-x;
+});
+console.log(valArr5);
+
+// Finding
+//create a function to find what you want:
+function under50(passedArr) {
+    return passedArr < 50;
+}
+let valArr6;
+valArr6 = valArr5.find(under50);
+console.log(valArr6);
