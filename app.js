@@ -540,3 +540,41 @@ function under50(passedArr) {
 let valArr6;
 valArr6 = valArr5.find(under50);
 console.log(valArr6);
+
+
+//OBJECT LITERALS
+
+const personObj = {
+    firstName: 'Steve',
+    lastName: 'Smith',
+    age: 30,
+    email: 'steve@aol.com',
+    hobbies: ['music', 'sports'],
+    address: {
+        city: 'Miami',
+        state: 'FL'
+    },
+    getBirthYear: function () {
+        return 1989;
+    },
+};
+
+let valName;
+valName = personObj;
+console.log(valName);
+
+let valName2;
+valName2 = personObj.firstName;
+console.log(valName2);
+
+let valName3;
+valName3 = personObj['lastName'];
+console.log(valName3);
+
+let valName4;
+valName4 = personObj.age;
+console.log(valName4);
+
+let valName5;
+valName5 = personObj.hobbies;
+console.log(valName5);
