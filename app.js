@@ -555,7 +555,9 @@ const personObj = {
         state: 'FL'
     },
     getBirthYear: function () {
-        return 1989;
+        var d = new Date();
+        var n = d.getFullYear();
+        return n - this.age;
     },
 };
 
@@ -576,5 +578,27 @@ valName4 = personObj.age;
 console.log(valName4);
 
 let valName5;
-valName5 = personObj.hobbies;
+valName5 = personObj.hobbies [1];
 console.log(valName5);
+
+let valName6;
+valName6 = personObj.address.state;
+console.log(valName6);
+
+let valName7;
+valName7 = personObj.address['city'];
+console.log(valName7);
+
+let valName8;
+valName8 = personObj.getBirthYear();
+console.log(valName8);
+
+const people = [
+    {name: 'John', age: 30},
+    {name: 'Mike', age: 23},
+    {name: 'Nancy', age: 50},
+];
+
+for (let i = 0; i < people.length; i++) {
+    console.log(people[i].name);    
+};
