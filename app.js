@@ -602,3 +602,36 @@ const people = [
 for (let i = 0; i < people.length; i++) {
     console.log(people[i].name);    
 };
+
+
+//DATES
+
+let valDate;
+
+const todayDate = new Date();
+valDate = todayDate;
+console.log(valDate);
+
+let birthDate = new Date('11-07-1980 11:25:00').toLocaleDateString('en-GB');
+console.log(birthDate);
+birthDate = new Date('11 July 1980 11:25:00')//.toLocaleDateString('en-GB');
+console.log(birthDate);
+birthDate = new Date('11/7/1980 11:25:00').toLocaleDateString('en-GB');
+console.log(birthDate);
+
+valDate = todayDate.getMonth(); //This is a 0 based array -> January = 0
+console.log(valDate);
+valDate = todayDate.getDate(); //This is NOT a 0 based array!
+console.log(valDate);
+valDate = todayDate.getDay(); //This is 0 based array starting on Sunday.
+console.log(valDate);
+valDate = todayDate.getFullYear();
+console.log(valDate);
+valDate = todayDate.getHours();
+console.log(valDate);
+valDate = todayDate.getMinutes();
+console.log(valDate);
+valDate = todayDate.getSeconds();
+console.log(valDate);
+valDate = todayDate.getMilliseconds();
+console.log(valDate);
